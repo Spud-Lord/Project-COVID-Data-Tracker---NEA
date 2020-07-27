@@ -1,0 +1,5 @@
+Downloaded Libraries:
+
+requests - python pip install requests
+setuptools - python -m pip install -U pip setuptools
+matplotlib - python -m pip install matplotlib
