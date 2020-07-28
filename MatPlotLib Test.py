@@ -1,6 +1,6 @@
 #MatPlotLib Test
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 # plt.plot([1, 2, 3, 4]) #What to plot
 # plt.ylabel('some numbers') #Label for Y Axis
 # plt.show() #Show Graph
