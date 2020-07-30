@@ -1,8 +1,5 @@
 #Jake Eaton
 
-from calldatafunction import Call
+from calldatafunction import CountryCall
 
-global country
-
-country = input("Input here: ")
-Call()
+CountryCall()
