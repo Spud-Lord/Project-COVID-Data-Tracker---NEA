@@ -1,6 +1,6 @@
 #Jake Eaton
 
-from typing import type. type2
+from typing import type, type2
 import requests
 
 def CountryCall():
