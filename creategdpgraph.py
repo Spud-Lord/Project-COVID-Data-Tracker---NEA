@@ -10,6 +10,6 @@ def GDPGraph():
     y = []
 
     fig, ax = plt.subplots()
-    plt.plot(x,y,color="blue",s=2)
-    ax.set(xlabel="", ylabel="Gross Domestic Product", title=country)
+    plt.plot(x,y,color="blue")
+    ax.set(xlabel="Date", ylabel="Gross Domestic Product", title=country)
     plt.show()
