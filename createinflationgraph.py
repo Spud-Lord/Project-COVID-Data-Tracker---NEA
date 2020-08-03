@@ -11,5 +11,5 @@ def InflationGraph():
 
     fig, ax = plt.subplots()
     plt.plot(x,y,color="blue")
-    ax.set(xlabel="Date", ylabel="Inflation Rate", title=country)
+    ax.set(xlabel="Date", ylabel="Inflation Rate", title="Switzerland Test")
     plt.show()

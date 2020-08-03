@@ -11,5 +11,5 @@ def DeathGraph():
 
     fig, ax = plt.subplots()
     plt.plot(x,y,color="blue")
-    ax.set(xlabel="Date", ylabel="Number of Deaths", title=country)
+    ax.set(xlabel="Date", ylabel="Number of Deaths", title="Switzerland Test")
     plt.show()
