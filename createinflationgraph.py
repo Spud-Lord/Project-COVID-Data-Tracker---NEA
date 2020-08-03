@@ -3,13 +3,13 @@
 from calldatafunction import CountryCall
 import matplotlib.pyplot as plt
 
-def DeathGraph():
+def InflationGraph():
     CountryCall()
 
-    x = [Date]
-    y = [Deaths]
+    x = []
+    y = []
 
     fig, ax = plt.subplots()
     plt.plot(x,y,color="blue",s=2)
-    ax.set(xlabel="Date", ylabel="Number of Deaths", title=country)
+    ax.set(xlabel="", ylabel="Inflation Rate", title=country)
     plt.show()

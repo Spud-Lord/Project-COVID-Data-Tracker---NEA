@@ -1,12 +1,15 @@
 #Jake Eaton
 
-import matplotlib.ptplot as plt
-from calldatafunction import country
+from calldatafunction import CountryCall
+import matplotlib.pyplot as plt
 
-x = []
-y = []
+def InfectionGraph():
+    CountryCall()
 
-fig, ax = plt.subplots()
-plt.plot(x,y,color="blue".s=2)
-ax.set(xlabel="Date", ylabel="Number of Infections", title=country)
-plt.show()
+    x = [url.Date]
+    y = [url.Cases]
+
+    fig, ax = plt.subplots()
+    plt.plot(x,y,color="blue")
+    ax.set(xlabel="Date", ylabel="Number of Infections", title="Switzerland Test")
+    plt.show()
