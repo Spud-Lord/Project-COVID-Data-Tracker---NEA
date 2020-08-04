@@ -1,7 +1,7 @@
 #Jake Eaton
 
-from calldatafunction import CountryCall
-import matplotlib.pyplot as plt
+from calldatafunction import CountryCall    #Imports required functions
+import matplotlib.pyplot as plt #Imports MatPlotLib as plot
 
 def InfectionGraph():
     CountryCall()
