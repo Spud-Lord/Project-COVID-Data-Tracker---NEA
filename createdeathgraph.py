@@ -1,15 +1,23 @@
 #Jake Eaton
 
-from calldatafunction import CountryCall    #Imports required functions
-import matplotlib.pyplot as plt #Imports MatPlotLib as plot
+from calldeathfunction import CountryCall
+from dataformatter import Formatter
+import matplotlib.pyplot as plt
 
 def DeathGraph():
-    CountryCall()
+    url = CountryCall()
+    sorted = Formatter(url.content)
 
-    x = [Date]
-    y = [Deaths]
+    x = []
+    y = []
+
+    for i in range(len(sorted)):
+        val = sorted[i][9]
+        x.append(val[:10])
+        y.append(sorted[i][7])
 
     fig, ax = plt.subplots()
     plt.plot(x,y,color="blue")
     ax.set(xlabel="Date", ylabel="Number of Deaths", title="Switzerland Test")
+    plt.xticks(rotation = 90)
     plt.show()

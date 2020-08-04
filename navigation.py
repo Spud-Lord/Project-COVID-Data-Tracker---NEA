@@ -2,37 +2,37 @@
 
 from creategdpgraph import GDPGraph
 from createinflationgraph import InflationGraph
-from createinfectiongraph import InfectionGraph #Imports the required functions
+from createinfectiongraph import InfectionGraph
 from createdeathgraph import DeathGraph
 from typing import type, type2
-import time #Imports time
+import time
 
 def Nav():
     type("Would you like to view a Financial Graph or COVID-19 Data Graph? Type Exit to go back")
     choice = input("")
     print("")
 
-    if choice.lower() == "financial":   #Sets the input to be lower case to avoid any capital letter mistakes
+    if choice.lower() == "financial":
         type("Would you like to view GDP or Inflation?")
         fgraphtype = input("")
 
-        if fgraphtype.lower() == "gdp":   #Sets the input to be lower case to avoid any capital letter mistakes
+        if fgraphtype.lower() == "gdp":
             GDPGraph()
 
-        elif fgraphtype.lower() == "inflation":   #Sets the input to be lower case to avoid any capital letter mistakes
+        elif fgraphtype.lower() == "inflation":
             InflationGraph()
 
-    elif choice.lower() == "covid-19":   #Sets the input to be lower case to avoid any capital letter mistakes
+    elif choice.lower() == "covid-19":
         type("Would you like to view Infection or Death numbers?")
         cgraphtype = input("")
 
-        if cgraphtype.lower() == "infection":   #Sets the input to be lower case to avoid any capital letter mistakes
+        if cgraphtype.lower() == "infection":
             InfectionGraph()
 
-        elif cgraphtype.lower() == "death":   #Sets the input to be lower case to avoid any capital letter mistakes
+        elif cgraphtype.lower() == "death":
             DeathGraph()
 
-    elif choice.lower() == "exit":   #Sets the input to be lower case to avoid any capital letter mistakes
+    elif choice.lower() == "exit":
         print("To be Added")
 
     else:
