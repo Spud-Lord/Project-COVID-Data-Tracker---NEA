@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 def InfectionGraph():
     CountryCall()
 
-    x = []
-    y = []
+    x = [url.Date]
+    y = [url.Cases]
 
     fig, ax = plt.subplots()
     plt.plot(x,y,color="blue")
