@@ -1,6 +1,5 @@
 #Jake Eaton
 
-from calldatafunction import CountryCall #Imports functions from programs
 import matplotlib.pyplot as plt #Imports MatPlotLib Module
 
 def InflationGraph():
