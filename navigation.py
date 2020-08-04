@@ -2,10 +2,10 @@
 
 from creategdpgraph import GDPGraph
 from createinflationgraph import InflationGraph
-from createinfectiongraph import InfectionGraph
+from createinfectiongraph import InfectionGraph #Imports functions from programs
 from createdeathgraph import DeathGraph
 from typing import type, type2
-import time
+import time #Imports time module
 
 def Nav():
     type("Would you like to view a Financial Graph or COVID-19 Data Graph? Type Exit to go back")

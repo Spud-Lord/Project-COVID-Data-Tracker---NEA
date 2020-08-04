@@ -1,26 +1,23 @@
 #Jake Eaton
 
 from callinfectionfunction import CountryCall
-from dataformatter import Formatter
-import matplotlib.pyplot as plt
+from dataformatter import Formatter #Imports functions from programs
+import matplotlib.pyplot as plt #Imports MatPlotLib Module
 
 def InfectionGraph():
-    url = CountryCall()
-    #format of data = [[country,countrycode,province,city,citycode,latitude,longitude,cases,status,date][next batch of data]
-    #then getting the data is easy
-    #and dont worry, i promise all the variable names are normal and nothing is an insult to myself or the code.
-    Sorted = Formatter(url.content)
+    url = CountryCall() #Sets the CountryCall Function as a variable
+    Sorted = Formatter(url.content) #Sets the data gathered from the API as a variable
 
-    x =[]
+    x =[]  #Blank arrays for the X and Y Axis Data
     y =[]
 
-    for i in range(len(Sorted)):
+    for i in range(len(Sorted)):    #For loop to put the data in the appropriate axes
         val =Sorted[i][9]
         x.append(val[:10])
         y.append(Sorted[i][7])
 
     fig, ax = plt.subplots()
-    plt.plot(x,y,color="blue")
-    ax.set(xlabel="Date", ylabel="Number of Infections", title="Switzerland Test")
-    plt.xticks(rotation = 90)#we are rotating the labels so we can read them
-    plt.show()
+    plt.plot(x,y,color="blue")  #Plots X and Y in colour blue
+    ax.set(xlabel="Date", ylabel="Number of Infections", title="Switzerland Test")    #Sets the labels of the axes
+    plt.xticks(rotation = 90)   #Rotates the labels to be orientated to be readable
+    plt.show()  #Shows Graph

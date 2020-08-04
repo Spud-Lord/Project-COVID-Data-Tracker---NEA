@@ -1,9 +1,9 @@
 #Jake Eaton
 
 from calldatafunction import CountryCall
-from typing import type, type2
+from typing import type, type2 #Imports functions from programs
 from navigation import Nav
-import time
+import time #Imports Time Module
 
 type("Welcome\n")
 Nav()
