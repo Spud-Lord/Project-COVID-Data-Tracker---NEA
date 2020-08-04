@@ -8,7 +8,7 @@ from typing import type, type2
 import time #Imports time module
 
 def Nav():
-    type("Would you like to view a Financial Graph or COVID-19 Data Graph? Type Exit to go back")
+    type("Would you like to view a Financial Graph or COVID-19 Data Graph? Type Exit to go back\n")
     choice = input("")
     print("")
 
