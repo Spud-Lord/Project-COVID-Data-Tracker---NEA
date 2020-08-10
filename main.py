@@ -45,6 +45,8 @@ def Menu():
             Menu()
 
     elif choice.lower() == "exit":   #Sets the user input as lower case to avoid any capital letter mistakes
+        type("Thank you for using this program!")
+        time.sleep(2)
         exit()
 
     else:
