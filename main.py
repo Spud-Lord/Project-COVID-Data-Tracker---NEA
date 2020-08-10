@@ -1,4 +1,5 @@
 #Jake Eaton
+#Project Zeta Data
 
 from creategdpgraph import GDPGraph
 from createinflationgraph import InflationGraph
