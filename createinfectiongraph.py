@@ -20,4 +20,4 @@ def InfectionGraph():
     plt.plot(x,y,color="blue")  #Plots X and Y in colour blue
     ax.set(xlabel="Date", ylabel="Number of Infections", title="Switzerland Test")    #Sets the labels of the axes
     plt.xticks(rotation = 90)   #Rotates the labels to be orientated to be readable
-    plt.show()  #Shows Graph
+    plt.draw()  #Shows Graph

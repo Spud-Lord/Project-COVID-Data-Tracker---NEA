@@ -7,6 +7,7 @@ from createinfectiongraph import InfectionGraph #Imports functions from programs
 from createdeathgraph import DeathGraph
 from typing import type, type2
 import time #Imports time module
+import matplotlib.pyplot as plt #Imports MatPlotLib Module
 
 type("Welcome!\n")
 time.sleep(2)
@@ -37,7 +38,13 @@ def Menu():
         if cgraphtype.lower() == "infection":   #Sets the user input as lower case to avoid any capital letter mistakes
             InfectionGraph()  #Runs Function
             print("")   #Prints a gap to neaten the view
-            Menu()
+            newgraph = input("Would you like to compare with another graph? ")
+            if newgraph.lower() == "yes":
+                Menu()
+
+            elif newgraph.lower() == "no":
+                plt.show()
+                Menu()
 
         elif cgraphtype.lower() == "death":   #Sets the user input as lower case to avoid any capital letter mistakes
             DeathGraph()  #Runs Function
