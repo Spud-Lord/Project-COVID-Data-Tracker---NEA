@@ -1,8 +1,7 @@
 #Jake Eaton
 #Type Code
 
-import sys                          #Imports System and Time Modules
-import time
+import sys, time                    #Imports System and Time Modules
 
 def type(string):
     for char in string:
