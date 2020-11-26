@@ -1,6 +1,6 @@
 #Jake Eaton
 
-from callinfectionfunction import CountryCall
+import callinfectionfunction
 from dataformatter import Formatter #Imports functions from programs
 import matplotlib.pyplot as plt #Imports MatPlotLib Module
 
@@ -18,6 +18,6 @@ def InfectionGraph():
 
     fig, ax = plt.subplots()
     plt.plot(x,y,color="blue")  #Plots X and Y in colour blue
-    ax.set(xlabel="Date", ylabel="Number of Infections", title=country)    #Sets the labels of the axes
+    ax.set(xlabel="Date", ylabel="Number of Infections", title=callinfectionfunction.country)    #Sets the labels of the axes
     plt.xticks(rotation = 90)   #Rotates the labels to be orientated to be readable
     plt.draw()  #Shows Graph
