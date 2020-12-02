@@ -8,6 +8,11 @@ from createdeathgraph import DeathGraph
 from typing import type, type2
 import time #Imports time module
 import matplotlib.pyplot as plt #Imports MatPlotLib Module
+from os import system, name
+
+def clear():
+    if name =='nt':                                                                 #Defines the clear command for the Terminal
+        _ = system('cls')
 
 type("Welcome!\n")
 time.sleep(2)
@@ -42,11 +47,13 @@ def Menu():
             newGraphchoice = input("")
             if newGraphchoice.lower() == "yes":
                 print("")
+                clear()
                 Menu()
 
             elif newGraphchoice.lower() == "no":
                 print("")
                 plt.show()
+                clear()
                 Menu()
 
         elif cgraphtype.lower() == "death":   #Sets the user input as lower case to avoid any capital letter mistakes
@@ -62,5 +69,6 @@ def Menu():
     else:
         type("Please choose one of the options above")
         time.sleep(2)
+        clear()
         Menu()
 Menu()
