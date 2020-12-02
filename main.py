@@ -38,11 +38,13 @@ def Menu():
         if cgraphtype.lower() == "infection":   #Sets the user input as lower case to avoid any capital letter mistakes
             InfectionGraph()  #Runs Function
             print("")   #Prints a gap to neaten the view
-            newgraph = input("Would you like to compare with another graph? ")
+            newgraph = input("Would you like to compare with another graph? (Yes or No)\n")
             if newgraph.lower() == "yes":
+                print("")
                 Menu()
 
             elif newgraph.lower() == "no":
+                print("")
                 plt.show()
                 Menu()
 
