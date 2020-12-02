@@ -39,6 +39,7 @@ def Menu():
             InfectionGraph()  #Runs Function
             print("")   #Prints a gap to neaten the view
             newgraph = input("Would you like to compare with another graph? (Yes or No)\n")
+            print("")
             if newgraph.lower() == "yes":
                 print("")
                 Menu()
@@ -61,4 +62,5 @@ def Menu():
     else:
         type("Please choose one of the options above")
         time.sleep(2)
+        Menu()
 Menu()
