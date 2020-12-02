@@ -8,10 +8,10 @@ from createdeathgraph import DeathGraph
 from typing import type, type2
 import time #Imports time module
 import matplotlib.pyplot as plt #Imports MatPlotLib Module
-from os import system, name
+from os import system, name #Imports the system and name elements from OS Module
 
-def clear():
-    if name =='nt':                                                                 #Defines the clear command for the Terminal
+def clear(): #Defines the clear command for the Terminal - Utilizes the built in "cls" command in Windows Command Prompt to clear the screen in Python
+    if name =='nt': #Currently only set up for Windows
         _ = system('cls')
 
 type("Welcome!\n")
@@ -46,14 +46,14 @@ def Menu():
             type("Would you like to compare with another graph? (Yes or No)\n")
             newGraphchoice = input("")
             if newGraphchoice.lower() == "yes":
-                print("")
-                clear()
+                print("")   #Prints a gap to neaten the view
+                clear() #Runs Clear Function
                 Menu()
 
             elif newGraphchoice.lower() == "no":
-                print("")
-                plt.show()
-                clear()
+                print("")   #Prints a gap to neaten the view
+                plt.show()  #Shows Graphs
+                clear() #Runs Clear Function
                 Menu()
 
         elif cgraphtype.lower() == "death":   #Sets the user input as lower case to avoid any capital letter mistakes
@@ -69,6 +69,6 @@ def Menu():
     else:
         type("Please choose one of the options above")
         time.sleep(2)
-        clear()
+        clear() #Runs Clear Function
         Menu()
-Menu()
+Menu()  #Allows Main Menu Loop to run
