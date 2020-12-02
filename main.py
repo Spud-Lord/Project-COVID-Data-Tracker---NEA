@@ -31,20 +31,20 @@ def Menu():
             print("")   #Prints a gap to neaten the view
             Menu()
 
-    elif choice.lower() == "covid-19":   #Sets the user input as lower case to avoid any capital letter mistakes
+    elif choice.lower() == "covid-19" or "covid19" or "covid 19":   #Sets the user input as lower case to avoid any capital letter mistakes
         type("Would you like to view Infection or Death numbers?\n")
         cgraphtype = input("")
 
         if cgraphtype.lower() == "infection":   #Sets the user input as lower case to avoid any capital letter mistakes
             InfectionGraph()  #Runs Function
             print("")   #Prints a gap to neaten the view
-            newgraph = input("Would you like to compare with another graph? (Yes or No)\n")
-            print("")
-            if newgraph.lower() == "yes":
+            type("Would you like to compare with another graph? (Yes or No)\n")
+            newGraphchoice = input("")
+            if newGraphchoice.lower() == "yes":
                 print("")
                 Menu()
 
-            elif newgraph.lower() == "no":
+            elif newGraphchoice.lower() == "no":
                 print("")
                 plt.show()
                 Menu()
