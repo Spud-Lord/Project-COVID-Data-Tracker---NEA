@@ -1,12 +1,12 @@
 def Formatter(data):
     data = str(data)    #Sets a variable for string data
     SortedData = [] #Array for the final sorted data
-    quotes = 0
-    important = False   #Sets the boolean important as False
-    word = ""   #Sets word as blank
-    
+    quotes = 0  #Sets "quotes" variable as 0
+    important = False   #Sets the boolean "important" as False
+    word = ""   #Sets "word" as blank
+
     for i in range(len(data)):  #For loop to set data batches
-        if data[i] == "{":#New data batch
+        if data[i] == "{":  #New data batch
             batch = []  #Sets array called batch
 
         elif data[i] == "}":#End of batch
@@ -36,7 +36,7 @@ def Formatter(data):
                     pass    #Pass it if not met
 
                 batch.append(word)  #Appends the batch Array with the word variable
-                word = ""   #Sets word to be blank
+                word = ""   #Sets word to be blank again
 
             else:
                 if data[i] != '"':
