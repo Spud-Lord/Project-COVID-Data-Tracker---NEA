@@ -12,12 +12,12 @@ def DeathGraph():
     y = []
 
     for i in range(len(sorted)):    #For loop to put the data in the appropriate axes
-        val = sorted[i][9]
-        x.append(val[:10])
-        y.append(sorted[i][7])
+        val = sorted[i][9]  #The values are from the Sorted array
+        x.append(val[:10])  #Make the x-axis the val variale
+        y.append(sorted[i][7])  #Make the y-axis the sorted variable
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots()    #Plot the plots on a graph
     plt.plot(x,y,color="blue")  #Plots X and Y in colour blue
     ax.set(xlabel="Date", ylabel="Number of Deaths")    #Sets the labels of the axes
     plt.xticks(rotation = 90)   #Rotates the labels to be orientated to be readable
-    plt.show()  #Shows Graph
+    plt.draw()  #Draws Graph but does NOT show it
