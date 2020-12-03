@@ -14,7 +14,7 @@ def clear(): #Defines the clear command for the Terminal - Utilizes the built in
     if name =='nt': #Windows ("NT" mean New Technology which was based off Windows 95)
         _ = system('cls')
 
-    else:   #MacOS and Linux
+    else:   #MacOS and Linux Clear Command
         _ = system('clear')
 
 type("Welcome!\n")
