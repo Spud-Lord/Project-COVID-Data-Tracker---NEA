@@ -66,7 +66,7 @@ def Menu():
 
     elif choice.lower() == "exit":   #Sets the user input as lower case to avoid any capital letter mistakes
         type("Thank you for using this program!")
-        type("Copyright Jake Eaton 2020")
+        type("© Jake Eaton 2020")
         time.sleep(2)
         exit()  #Runs built in exit function
 
