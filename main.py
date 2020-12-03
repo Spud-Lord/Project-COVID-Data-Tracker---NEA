@@ -32,12 +32,12 @@ def Menu():
         if fgraphtype.lower() == "gdp":   #Sets the user input as lower case to avoid any capital letter mistakes
             GDPGraph()  #Runs Function
             print("")   #Prints a gap to neaten the view
-            Menu()
+            Menu()  #Loops back to Main Menu
 
         elif fgraphtype.lower() == "inflation":   #Sets the user input as lower case to avoid any capital letter mistakes
             InflationGraph()  #Runs Function
             print("")   #Prints a gap to neaten the view
-            Menu()
+            Menu()  #Loops back to Main Menu
 
     elif choice.lower() == "covid-19" or "covid19" or "covid 19":   #Sets the user input as lower case to avoid any capital letter mistakes
         type("Would you like to view Infection or Death numbers?\n")
@@ -51,27 +51,28 @@ def Menu():
             if newGraphchoice.lower() == "yes":
                 print("")   #Prints a gap to neaten the view
                 clear() #Runs Clear Function
-                Menu()
+                Menu()  #Loops back to Main Menu
 
             elif newGraphchoice.lower() == "no":
                 print("")   #Prints a gap to neaten the view
                 plt.show()  #Shows Graphs
                 clear() #Runs Clear Function
-                Menu()
+                Menu()  #Loops back to Main Menu
 
         elif cgraphtype.lower() == "death":   #Sets the user input as lower case to avoid any capital letter mistakes
             DeathGraph()  #Runs Function
             print("")   #Prints a gap to neaten the view
-            Menu()
+            Menu()  #Loops back to Main Menu
 
     elif choice.lower() == "exit":   #Sets the user input as lower case to avoid any capital letter mistakes
         type("Thank you for using this program!")
+        type("Copyright Jake Eaton 2020")
         time.sleep(2)
-        exit()
+        exit()  #Runs built in exit function
 
     else:
         type("Please choose one of the options above")
         time.sleep(2)
         clear() #Runs Clear Function
-        Menu()
+        Menu()  #Loops back to Main Menu
 Menu()  #Allows Main Menu Loop to run
