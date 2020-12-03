@@ -9,4 +9,4 @@ def CountryCall():
     country = input("")
     country = country.lower()   #Converts the input to be lower case
     url = requests.get("https://api.covid19api.com/country/"+country+"/status/confirmed")   #URL to get confirmed cases in a country
-    return url
+    return url  #Returns the URL to be used in dataformatter.py
