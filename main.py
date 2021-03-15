@@ -50,7 +50,7 @@ def Menu():
             newGraphchoice = input("")
             if newGraphchoice.lower() == "yes":
                 print("")   #Prints a gap to neaten the view
-                clear() #Runs Clear Function
+                clear()
                 Menu()  #Loops back to Main Menu
 
             elif newGraphchoice.lower() == "no":
@@ -62,7 +62,18 @@ def Menu():
         elif cgraphtype.lower() == "death":   #Sets the user input as lower case to avoid any capital letter mistakes
             DeathGraph()  #Runs Function
             print("")   #Prints a gap to neaten the view
-            Menu()  #Loops back to Main Menu
+            type("Would you like to compare with another graph? (Yes or No)\n")
+            newGraphchoice = input("")
+            if newGraphchoice.lower() == "yes":
+                print("")   #Prints a gap to neaten the view
+                clear()
+                Menu()  #Loops back to Main Menu
+
+            elif newGraphchoice.lower() == "no":
+                print("")   #Prints a gap to neaten the view
+                plt.show()  #Shows Graphs
+                clear() #Runs Clear Function
+                Menu()  #Loops back to Main Menu
 
     elif choice.lower() == "exit":   #Sets the user input as lower case to avoid any capital letter mistakes
         type("Thank you for using this program!")
