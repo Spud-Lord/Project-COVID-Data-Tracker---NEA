@@ -1,7 +1,7 @@
 #Jake Eaton
 
-from calldeathfunction import CountryCall #Imports functions from programs
-from dataformatter import Formatter
+from calldeathfunction import CountryCall
+from dataformatter import Formatter #Imports functions from programs
 import matplotlib.pyplot as plt #Imports MatPlotLib Module
 
 def DeathGraph():
