@@ -13,7 +13,7 @@ def DeathGraph():
 
     for i in range(len(sorted)):    #For loop to put the data in the appropriate axes
         val = sorted[i][9]  #The values are from the Sorted array
-        x.append(val[:10])  #Make the x-axis the val variale
+        x.append(val[:10])  #Make the x-axis the val variable
         y.append(sorted[i][7])  #Make the y-axis the sorted variable
 
     fig, ax = plt.subplots()    #Plot the plots on a graph
