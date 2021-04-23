@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt #Imports MatPlotLib Module
 from os import system, name #Imports the system and name elements from OS Module
 
 def clear(): #Defines the clear command for the Terminal - Utilizes the built in "cls" command in Windows Command Prompt to clear the screen in Python
-    if name =='nt': #Windows ("NT" mean New Technology which was based off Windows 95)
+    if name =='nt': #Windows ("NT" mean New Technology which has been the basis of Windows Operating Systems since Windows 95)
         _ = system('cls')
 
     else:   #MacOS and Linux Clear Command
