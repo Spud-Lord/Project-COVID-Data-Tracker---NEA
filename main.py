@@ -3,11 +3,11 @@
 
 from creategdpgraph import GDPGraph
 from createinflationgraph import InflationGraph
-from createinfectiongraph import InfectionGraph #Imports functions from programs
+from createinfectiongraph import InfectionGraph #Imports functions from other programs
 from createdeathgraph import DeathGraph
-from typing import type, type2
+from typing import type
 import time #Imports time module
-import matplotlib.pyplot as plt #Imports MatPlotLib Module
+import matplotlib.pyplot as plt #Imports the pyplot section from the MatPlotLib Module as plt
 from os import system, name #Imports the system and name elements from OS Module
 
 def clear(): #Defines the clear command for the Terminal - Utilizes the built in "cls" command in Windows Command Prompt to clear the screen in Python

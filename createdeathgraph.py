@@ -19,5 +19,5 @@ def DeathGraph():
     fig, ax = plt.subplots()    #Plot the plots on a graph
     plt.plot(x,y,color="blue")  #Plots X and Y in colour blue
     ax.set(xlabel="Date", ylabel="Number of Deaths")    #Sets the labels of the axes
-    plt.xticks(rotation = 90)   #Rotates the labels to be orientated to be readable
+    plt.xticks(rotation = 90)   #Rotates the labels to be orientated to be kind of readable
     plt.draw()  #Draws Graph but does NOT show it
