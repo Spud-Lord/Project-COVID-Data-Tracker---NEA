@@ -1,5 +1,5 @@
 #Jake Eaton
-#Project Zeta Data
+#Project Data Thunder
 
 from creategdpgraph import GDPGraph
 from createinflationgraph import InflationGraph
