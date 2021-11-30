@@ -1,6 +1,6 @@
 #Jake Eaton
 
-from typing import type #Imports functions from programs
+from type import type #Imports functions from programs
 import requests #Imports Requests Module
 
 def CountryCall():

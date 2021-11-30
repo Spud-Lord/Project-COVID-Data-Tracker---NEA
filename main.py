@@ -5,7 +5,7 @@ from creategdpgraph import GDPGraph
 from createinflationgraph import InflationGraph
 from createinfectiongraph import InfectionGraph #Imports functions from other programs
 from createdeathgraph import DeathGraph
-from typing import type
+from type import type
 import time #Imports time module
 import matplotlib.pyplot as plt #Imports the pyplot section from the MatPlotLib Module as plt
 from os import system, name #Imports the system and name elements from OS Module
